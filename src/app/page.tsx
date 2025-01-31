@@ -27,12 +27,9 @@ const featuredProducts = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Header */}
-      <header className="bg-white shadow-md">
+    <div className="flex flex-col min-h-screen">
         <NavBar />
-      </header>
-
+        
       {/* Hero Section */}
       <section className="bg-gray-100 py-20">
         <div className="container mx-auto px-6 text-center">
