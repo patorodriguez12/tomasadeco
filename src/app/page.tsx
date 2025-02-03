@@ -28,8 +28,6 @@ const featuredProducts = [
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-        <NavBar />
-        
       {/* Hero Section */}
       <section className="bg-gray-100 py-20">
         <div className="container mx-auto px-6 text-center">
@@ -80,11 +78,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white py-6 mt-auto">
-        <Footer />
-      </footer>
     </div>
   );
 }
