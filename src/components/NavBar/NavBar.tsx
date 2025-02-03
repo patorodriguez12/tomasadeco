@@ -14,11 +14,14 @@ export const NavBar = () => {
           <Link href="/products" className="text-gray-700 hover:text-gray-900">
             Products
           </Link>
-          <Link href="/" className="text-gray-700 hover:text-gray-900">
-            Shop
+          <Link href="/about" className="text-gray-700 hover:text-gray-900">
+            About
           </Link>
-          <Link href="/" className="text-gray-700 hover:text-gray-900">
-            Cart
+          <Link href="/login" className="text-gray-700 hover:text-gray-900">
+            Login
+          </Link>
+          <Link href="/register" className="text-gray-700 hover:text-gray-900">
+            Register
           </Link>
         </nav>
       </div>

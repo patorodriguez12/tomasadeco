@@ -1,4 +1,4 @@
-export const Products = () => {
+export const Products: React.FC = () => {
   return (
     <div>
       <h1>Products Page</h1>
