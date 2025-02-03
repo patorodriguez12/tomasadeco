@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import NavBar from "./components/NavBar/NavBar";
-import Footer from "./components/Footer/Footer";
+import NavBar from "../components/NavBar/NavBar";
+import Footer from "../components/Footer/Footer";
 
 // Mock data for featured products
 const featuredProducts = [
