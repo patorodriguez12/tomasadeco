@@ -8,16 +8,16 @@ export const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+    <header className="sticky top-0 z-50 bg-white shadow-md">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold text-gray-800">
             LOGO
           </Link>
 
           {/* Navigation */}
-          <nav className="hidden md:flex space-x-6">
+          <nav className="hidden space-x-6 md:flex">
             <Link href="/products" className="text-gray-700 hover:text-black">
               Products
             </Link>
@@ -27,16 +27,16 @@ export const NavBar = () => {
           </nav>
 
           {/* Icons */}
-          <div className="flex space-x-4 items-center">
+          <div className="flex items-center space-x-4">
             <Link href="/cart">
-              <ShoppingCart className="w-6 h-6 text-gray-700 hover:text-black cursor-pointer" />
+              <ShoppingCart className="w-6 h-6 text-gray-700 cursor-pointer hover:text-black" />
             </Link>
             <Link href="/auth">
-              <User className="w-6 h-6 text-gray-700 hover:text-black cursor-pointer" />
+              <User className="w-6 h-6 text-gray-700 cursor-pointer hover:text-black" />
             </Link>
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden p-2 text-gray-700"
+              className="p-2 text-gray-700 md:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               ☰
@@ -46,7 +46,7 @@ export const NavBar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <nav className="md:hidden bg-white shadow-md rounded-md p-4 flex flex-col space-y-2">
+          <nav className="flex flex-col p-4 space-y-2 bg-white rounded-md shadow-md md:hidden">
             <Link href="/products" className="text-gray-700 hover:text-black">
               Products
             </Link>

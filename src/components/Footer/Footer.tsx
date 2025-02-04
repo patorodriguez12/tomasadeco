@@ -1,8 +1,8 @@
 export const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8 mt-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <footer className="py-8 mt-10 text-white bg-gray-900">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {/* Company Info */}
           <div>
             <h2 className="text-xl font-bold">TomasaDeco</h2>
@@ -14,7 +14,7 @@ export const Footer = () => {
           {/* Social Media */}
           <div>
             <h3 className="text-lg font-semibold">Follow Us</h3>
-            <div className="flex space-x-4 mt-2">
+            <div className="flex mt-2 space-x-4">
               <a href="#" className="text-gray-400 hover:text-white">
                 Facebook
               </a>
