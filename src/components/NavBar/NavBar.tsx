@@ -47,7 +47,7 @@ export const NavBar = () => {
                   Login
                 </Link>
                 <Link
-                  href="/signup"
+                  href="/register"
                   className="text-gray-700 hover:text-black"
                   onClick={() => setIsAuthMenuOpen(false)}
                 >

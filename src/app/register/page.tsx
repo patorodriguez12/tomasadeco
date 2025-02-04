@@ -1,7 +1,11 @@
 export const Register: React.FC = () => {
   return (
-    <div>
-      <h1>Register Page</h1>
+    <div className="flex flex-col items-center justify-center h-screen">
+      <form className="flex flex-col gap-4">
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button type="submit">Register</button>
+      </form>
     </div>
   );
 };
