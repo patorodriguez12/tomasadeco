@@ -6,6 +6,7 @@ import { useState } from "react";
 
 export const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isAuthMenuOpen, setIsAuthMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
@@ -31,9 +32,30 @@ export const NavBar = () => {
             <Link href="/cart">
               <ShoppingCart className="w-6 h-6 text-gray-700 cursor-pointer hover:text-black" />
             </Link>
-            <Link href="/auth">
+            <button onClick={() => setIsAuthMenuOpen(!isAuthMenuOpen)}>
               <User className="w-6 h-6 text-gray-700 cursor-pointer hover:text-black" />
-            </Link>
+            </button>
+
+            {/* Authentication Menu */}
+            {isAuthMenuOpen && (
+              <nav className="flex flex-col p-4 space-y-2 bg-white rounded-md shadow-md">
+                <Link
+                  href="/login"
+                  className="text-gray-700 hover:text-black"
+                  onClick={() => setIsAuthMenuOpen(false)}
+                >
+                  Login
+                </Link>
+                <Link
+                  href="/signup"
+                  className="text-gray-700 hover:text-black"
+                  onClick={() => setIsAuthMenuOpen(false)}
+                >
+                  Signup
+                </Link>
+              </nav>
+            )}
+
             {/* Mobile Menu Button */}
             <button
               className="p-2 text-gray-700 md:hidden"
