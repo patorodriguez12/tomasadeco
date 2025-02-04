@@ -4,7 +4,7 @@ export const products = [
     name: "Product 1",
     price: 40,
     description: "This is a product description.",
-    image: "https://via.placeholder.com/150",
+    image: "https://placehold.co/600x400/png",
     stock: 10,
   },
   {
@@ -12,7 +12,7 @@ export const products = [
     name: "Product 2",
     price: 50,
     description: "This is another product description.",
-    image: "https://via.placeholder.com/150",
+    image: "https://placehold.co/600x400/png",
     stock: 5,
   },
   {
@@ -20,7 +20,7 @@ export const products = [
     name: "Product 3",
     price: 60,
     description: "This is yet another product description.",
-    image: "https://via.placeholder.com/150",
+    image: "https://placehold.co/600x400/png",
     stock: 3,
   },
   {
@@ -28,7 +28,7 @@ export const products = [
     name: "Product 4",
     price: 70,
     description: "This is yet another product description.",
-    image: "https://via.placeholder.com/150",
+    image: "https://placehold.co/600x400/png",
     stock: 2,
   },
   {
@@ -36,7 +36,7 @@ export const products = [
     name: "Product 5",
     price: 80,
     description: "This is yet another product description.",
-    image: "https://via.placeholder.com/150",
+    image: "https://placehold.co/600x400/png",
     stock: 1,
   },
   {
@@ -44,7 +44,7 @@ export const products = [
     name: "Product 6",
     price: 90,
     description: "This is yet another product description.",
-    image: "https://via.placeholder.com/150",
+    image: "https://placehold.co/600x400/png",
     stock: 8,
   },
 ];
