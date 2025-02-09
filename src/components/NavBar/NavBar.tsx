@@ -9,20 +9,26 @@ export const NavBar = () => {
   const [isAuthMenuOpen, setIsAuthMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header className="sticky top-0 z-50 bg-background shadow-md">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-gray-800">
+          <Link href="/" className="text-2xl font-bold text-primary">
             LOGO
           </Link>
 
           {/* Navigation */}
           <nav className="hidden space-x-6 md:flex">
-            <Link href="/products" className="text-gray-700 hover:text-black">
+            <Link
+              href="/products"
+              className="text-dark hover:text-accent duration-300 transition-all"
+            >
               Products
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-black">
+            <Link
+              href="/about"
+              className="text-dark hover:text-accent duration-300 transition-all"
+            >
               About
             </Link>
           </nav>
@@ -30,10 +36,10 @@ export const NavBar = () => {
           {/* Icons */}
           <div className="flex items-center space-x-4">
             <Link href="/cart">
-              <ShoppingCart className="w-6 h-6 text-gray-700 cursor-pointer hover:text-black" />
+              <ShoppingCart className="w-6 h-6 text-contrast cursor-pointer hover:text-accent duration-300 transition-all" />
             </Link>
             <button onClick={() => setIsAuthMenuOpen(!isAuthMenuOpen)}>
-              <User className="w-6 h-6 text-gray-700 cursor-pointer hover:text-black" />
+              <User className="w-6 h-6 text-contrast cursor-pointer hover:text-accent duration-300 transition-all" />
             </button>
 
             {/* Authentication Menu */}
@@ -41,14 +47,14 @@ export const NavBar = () => {
               <nav className="flex flex-col p-4 space-y-2 bg-white rounded-md shadow-md">
                 <Link
                   href="/login"
-                  className="text-gray-700 hover:text-black"
+                  className="text-dark hover:text-accent duration-300 transition-all"
                   onClick={() => setIsAuthMenuOpen(false)}
                 >
                   Login
                 </Link>
                 <Link
                   href="/register"
-                  className="text-gray-700 hover:text-black"
+                  className="text-dark hover:text-accent duration-300 transition-all"
                   onClick={() => setIsAuthMenuOpen(false)}
                 >
                   Signup
