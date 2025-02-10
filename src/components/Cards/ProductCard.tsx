@@ -21,9 +21,12 @@ export const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
           className="rounded-md object-cover w-full"
         />
         <div className="p-4">
-          <h2 className="text-lg font-semibold">{product.name}</h2>
-          <p className="text-sm text-gray-600">{product.description}</p>
-          <p className="mt-2 font-light">${product.price}</p>
+          <div className="flex justify-between items-center">
+            <h2 className="text-lg font-semibold">{product.name}</h2>
+            <p className="mt-2 font-light">${product.price}</p>
+          </div>
+
+          <p className="mt-2 text-sm font-extralight text-gray-600">{product.description}</p>
         </div>
       </div>
     </div>
