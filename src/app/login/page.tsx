@@ -61,7 +61,7 @@ export const Login: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-2 text-white transition rounded-md bg-primary hover:bg-gray-800"
+                className="w-full py-2 text-white transition rounded-md bg-primary hover:bg-dark"
               >
                 Iniciar sesión
               </button>
