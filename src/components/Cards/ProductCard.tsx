@@ -11,18 +11,20 @@ interface Product {
 
 export const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   return (
-    <div className="p-4 bg-red-200 rounded-lg shadow-lg w-80 hover:shadow-xl hover:scale-105 transition-all duration-300">
+    <div className="max-w-80 max-h-80 relative overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 rounded-md cursor-pointer">
       <div className="mb-4 text-black">
         <Image
           src={product.image}
           alt={product.name}
-          width={300}
-          height={300}
+          width={600}
+          height={400}
           className="rounded-md object-cover w-full"
         />
-        <h2>{product.name}</h2>
-        <p>{product.description}</p>
-        <p>${product.price}</p>
+        <div className="p-4">
+          <h2 className="text-lg font-semibold">{product.name}</h2>
+          <p className="text-sm text-gray-600">{product.description}</p>
+          <p className="mt-2 font-light">${product.price}</p>
+        </div>
       </div>
     </div>
   );
