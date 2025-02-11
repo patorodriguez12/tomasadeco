@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { products } from "@/utils/products";
+import { products } from "@/utils/products/products";
 import ProductCard from "@/components/Cards/ProductCard";
 
 import Filters from "./Filters";
@@ -23,10 +23,10 @@ export const Products: React.FC = () => {
   return (
     <div className="min-h-screen p-8 px-4 mx-auto max-w-container bg-background">
       <div className="flex w-full h-full gap-10 pb-20">
-        {/* Left Sidebar */}
+        {/* Left side - Filters */}
         <Filters />
 
-        {/* Right Products */}
+        {/* Right side - Products */}
         <div className="w-full md:w-[80%] lg:w-[75%] h-full flex flex-col gap-10">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             {currentItems.map((product) => (
