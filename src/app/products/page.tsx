@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { products } from "@/utils/products/products";
-import ProductCard from "@/components/Cards/ProductCard";
+import { products } from "@/utils/products";
 
 import Filters from "./Filters";
 import Pagination from "./Pagination";
+import ProductList from "./ProductList";
 
 export const Products: React.FC = () => {
   const filteredProducts = products.filter((product) => product.stock > 0);
@@ -28,11 +28,7 @@ export const Products: React.FC = () => {
 
         {/* Right side - Products */}
         <div className="w-full md:w-[80%] lg:w-[75%] h-full flex flex-col gap-10">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {currentItems.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
+          <ProductList products={currentItems} />
           <Pagination
             pageCount={pageCount}
             onPageChange={handlePageClick}
