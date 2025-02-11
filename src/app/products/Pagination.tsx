@@ -30,7 +30,9 @@ export const Pagination: React.FC<PaginationProps> = ({
         activeClassName="bg-black text-white"
       />
       <p className="text-sm font-light text-gray-600">
-        Mostrando {itemOffset + 1} a {endOffset} de {totalItems} productos
+        Mostrando de <span className="font-semibold">{itemOffset + 1}</span> a{" "}
+        <span className="font-semibold">{endOffset}</span> de{" "}
+        <span className="font-semibold">{totalItems}</span> productos
       </p>
     </div>
   );
