@@ -5,6 +5,9 @@ export interface Product {
   description: string;
   image: string;
   stock: number;
+  category: string;
+  featured: boolean;
+  createdAt: string;
 }
 
 export const products: Product[] = [
@@ -15,6 +18,9 @@ export const products: Product[] = [
     description: "This is a product description.",
     image: "https://placehold.co/600x400/png",
     stock: 10,
+    category: "Category 1",
+    featured: true,
+    createdAt: "2025-01-01",
   },
   {
     id: 2,
@@ -23,6 +29,9 @@ export const products: Product[] = [
     description: "This is another product description.",
     image: "https://placehold.co/600x400/png",
     stock: 5,
+    category: "Category 2",
+    featured: false,
+    createdAt: "2025-01-05",
   },
   {
     id: 3,
@@ -31,6 +40,9 @@ export const products: Product[] = [
     description: "This is yet another product description.",
     image: "https://placehold.co/600x400/png",
     stock: 3,
+    category: "Category 3",
+    featured: true,
+    createdAt: "2025-01-10",
   },
   {
     id: 4,
@@ -39,6 +51,9 @@ export const products: Product[] = [
     description: "This is yet another product description.",
     image: "https://placehold.co/600x400/png",
     stock: 2,
+    category: "Category 2",
+    featured: false,
+    createdAt: "2025-01-15",
   },
   {
     id: 5,
@@ -47,6 +62,9 @@ export const products: Product[] = [
     description: "This is yet another product description.",
     image: "https://placehold.co/600x400/png",
     stock: 1,
+    category: "Category 1",
+    featured: false,
+    createdAt: "2025-01-20",
   },
   {
     id: 6,
@@ -55,6 +73,9 @@ export const products: Product[] = [
     description: "This is yet another product description.",
     image: "https://placehold.co/600x400/png",
     stock: 8,
+    category: "Category 3",
+    featured: true,
+    createdAt: "2025-01-25",
   },
   {
     id: 7,
@@ -63,6 +84,9 @@ export const products: Product[] = [
     description: "This is yet another product description.",
     image: "https://placehold.co/600x400/png",
     stock: 7,
+    category: "Category 2",
+    featured: false,
+    createdAt: "2025-02-01",
   },
   {
     id: 8,
@@ -71,6 +95,9 @@ export const products: Product[] = [
     description: "This is yet another product description.",
     image: "https://placehold.co/600x400/png",
     stock: 6,
+    category: "Category 1",
+    featured: false,
+    createdAt: "2025-01-05",
   },
   {
     id: 9,
@@ -79,6 +106,9 @@ export const products: Product[] = [
     description: "This is yet another product description.",
     image: "https://placehold.co/600x400/png",
     stock: 4,
+    category: "Category 3",
+    featured: true,
+    createdAt: "2025-02-10",
   },
   {
     id: 10,
@@ -87,6 +117,9 @@ export const products: Product[] = [
     description: "This is yet another product description.",
     image: "https://placehold.co/600x400/png",
     stock: 9,
+    category: "Category 2",
+    featured: false,
+    createdAt: "2025-02-10",
   },
   {
     id: 11,
@@ -95,6 +128,9 @@ export const products: Product[] = [
     description: "This is yet another product description.",
     image: "https://placehold.co/600x400/png",
     stock: 10,
+    category: "Category 1",
+    featured: false,
+    createdAt: "2025-02-03",
   },
   {
     id: 12,
@@ -103,6 +139,9 @@ export const products: Product[] = [
     description: "This is yet another product description.",
     image: "https://placehold.co/600x400/png",
     stock: 15,
+    category: "Category 3",
+    featured: true,
+    createdAt: "2025-02-01",
   },
   {
     id: 13,
@@ -111,5 +150,8 @@ export const products: Product[] = [
     description: "This is yet another product description.",
     image: "https://placehold.co/600x400/png",
     stock: 8,
+    category: "Category 2",
+    featured: false,
+    createdAt: "2025-02-10",
   },
 ];
