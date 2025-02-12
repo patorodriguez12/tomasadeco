@@ -11,22 +11,24 @@ interface Product {
 
 export const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   return (
-    <div className="max-w-80 max-h-80 relative overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 rounded-md cursor-pointer">
+    <div className="relative w-full max-w-xs mx-auto overflow-hidden transition-all duration-300 rounded-md shadow-sm cursor-pointer hover:shadow-lg">
       <div className="mb-4 text-black">
         <Image
           src={product.image}
           alt={product.name}
           width={600}
           height={400}
-          className="rounded-md object-cover w-full"
+          className="object-cover w-full h-48 rounded-md"
         />
         <div className="p-4">
-          <div className="flex justify-between items-center">
+          <div className="flex items-center justify-between">
             <h2 className="text-lg font-semibold">{product.name}</h2>
             <p className="mt-2 font-light">${product.price}</p>
           </div>
 
-          <p className="mt-2 text-sm font-extralight text-gray-600">{product.description}</p>
+          <p className="mt-2 text-sm text-gray-600 font-extralight">
+            {product.description}
+          </p>
         </div>
       </div>
     </div>
