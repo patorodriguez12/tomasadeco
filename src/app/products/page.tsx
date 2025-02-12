@@ -9,7 +9,7 @@ import ProductList from "./ProductList";
 
 export const Products: React.FC = () => {
   const filteredProducts = products.filter((product) => product.stock > 0);
-  const itemsPerPage = 6;
+  const itemsPerPage = 9;
 
   const [itemOffset, setItemOffset] = useState(0);
   const endOffset = itemOffset + itemsPerPage;
@@ -21,17 +21,22 @@ export const Products: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen p-8 px-4 mx-auto max-w-container bg-background">
-      <div className="flex w-full h-full gap-10 pb-20">
+    <div className="p-8 px-4 mx-auto max-w-container bg-background">
+      <div className="min-h-screen flex w-full h-full gap-10 pb-20">
         {/* Left side - Filters */}
-        <Filters />
+        <div className="w-[20%] lg:w-[25%] hidden md:inline-flex h-full">
+          <Filters />
+        </div>
 
         {/* Divider */}
-        <div className="w-px mx-4 bg-gray-300" />
+        <div className="hidden w-px mx-4 bg-gray-300 md:inline-flex" />
 
         {/* Right side - Products */}
         <div className="w-full md:w-[80%] lg:w-[75%] h-full flex flex-col gap-10">
-          <ProductList products={currentItems} />
+          <div className="min-h-screen">
+            <ProductList products={currentItems} />
+          </div>
+
           <Pagination
             pageCount={pageCount}
             onPageChange={handlePageClick}

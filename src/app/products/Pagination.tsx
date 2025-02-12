@@ -17,6 +17,11 @@ export const Pagination: React.FC<PaginationProps> = ({
 }) => {
   return (
     <div className="flex flex-col items-center justify-center mx-20 md:flex-row md:justify-between">
+      <p className="text-sm font-light text-gray-600">
+        Mostrando de <span className="font-semibold">{itemOffset + 1}</span> a{" "}
+        <span className="font-semibold">{endOffset}</span> de{" "}
+        <span className="font-semibold">{totalItems}</span> productos
+      </p>
       <ReactPaginate
         nextLabel=""
         pageCount={pageCount}
@@ -29,11 +34,6 @@ export const Pagination: React.FC<PaginationProps> = ({
         pageClassName="mr-6"
         activeClassName="bg-black text-white"
       />
-      <p className="text-sm font-light text-gray-600">
-        Mostrando de <span className="font-semibold">{itemOffset + 1}</span> a{" "}
-        <span className="font-semibold">{endOffset}</span> de{" "}
-        <span className="font-semibold">{totalItems}</span> productos
-      </p>
     </div>
   );
 };
