@@ -26,6 +26,9 @@ export const Products: React.FC = () => {
         {/* Left side - Filters */}
         <Filters />
 
+        {/* Divider */}
+        <div className="w-px mx-4 bg-gray-300" />
+
         {/* Right side - Products */}
         <div className="w-full md:w-[80%] lg:w-[75%] h-full flex flex-col gap-10">
           <ProductList products={currentItems} />

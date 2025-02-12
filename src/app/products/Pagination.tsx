@@ -16,7 +16,7 @@ export const Pagination: React.FC<PaginationProps> = ({
   totalItems,
 }) => {
   return (
-    <div className="flex flex-col items-center justify-center p-4 md:flex-row md:justify-between">
+    <div className="flex flex-col items-center justify-center mx-20 md:flex-row md:justify-between">
       <ReactPaginate
         nextLabel=""
         pageCount={pageCount}
